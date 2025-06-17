@@ -5,7 +5,7 @@ const ExperienceCard = ({ darkMode }) => {
   const experience = {
     company: "EduSkills",
     position: "Full Stack Developer Intern",
-    period: "Oct - Dec 2023",
+    period: "Oct - Dec 2024",
     achievements: [
       "Engineered full-stack apps with HTML/CSS, JavaScript, Node.js, MongoDB and React",
       "Optimized backend efficiency by 30% and UI responsiveness by 40%",
