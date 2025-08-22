@@ -10,10 +10,10 @@ import SkillsSection from '../components/SkillsSection';
 const Home = ({ darkMode }) => {
   const projects = [
     {
-      title: "Spotify Album Finder",
-      description: "Real-time music search app with Spotify API",
-      tags: ["Node.js", "Express", "Spotify API"],
-      link: "/projects/spotify"
+      title: "Chatapp",
+      description: "Real-time chat application",
+      tags: ["React", "Node.js", "WebSocket", "JWT", "MongoDB"],
+      link: "/projects/chatapp"
     },
     {
       title: "Crypto Tracker",

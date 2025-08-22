@@ -19,7 +19,7 @@ const AchievementGrid = ({ darkMode }) => {
     },
     {
       title: "Leetcode Solver",
-      issuer: "250+ problems",
+      issuer: "450+ problems",
       icon: <FaTrophy />,
       description: "Data structures and algorithms"
     },

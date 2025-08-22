@@ -949,3 +949,15 @@ canvas {
     grid-template-columns: 1fr;
   }
 }
+/* App.css */
+.project-details {
+  @apply max-w-4xl mx-auto;
+}
+
+.tech-tag {
+  @apply transition-transform duration-200;
+}
+
+.glass-card {
+  @apply backdrop-filter backdrop-blur-md;
+}

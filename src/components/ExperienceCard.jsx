@@ -3,13 +3,13 @@ import GlassCard from './GlassCard';
 
 const ExperienceCard = ({ darkMode }) => {
   const experience = {
-    company: "EduSkills",
-    position: "Full Stack Developer Intern",
-    period: "Oct - Dec 2023",
+    company: "Koloq.ai",
+    position: "AI and Full Stack Developer Intern",
+    period: "July 2025 - Present",
     achievements: [
-      "Engineered full-stack apps with HTML/CSS, JavaScript, Node.js, MongoDB and React",
-      "Optimized backend efficiency by 30% and UI responsiveness by 40%",
-      "Reduced database latency by 25% through query optimization",
+    "Developed and integrated AI-driven features within web applications, combining MERN stack expertise with Generative AI tools.",
+    "Researched and applied agentic AI, LangChain, and cloud platforms (AWS, Docker) to enhance application scalability and intelligence.",
+"Collaborated with cross-functional teams to design and test innovative AI-powered solutions, improving efficiency and user engagement.",
       
     ]
   };
