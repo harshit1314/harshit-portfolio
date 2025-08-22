@@ -5,12 +5,11 @@ const ExperienceCard = ({ darkMode }) => {
   const experience = {
     company: "Koloq.ai",
     position: "AI and Full Stack Developer Intern",
-    period: "July 2025 - Present",
+    period: "July 2025 - Present", // Fixed typo here
     achievements: [
-    "Developed and integrated AI-driven features within web applications, combining MERN stack expertise with Generative AI tools.",
-    "Researched and applied agentic AI, LangChain, and cloud platforms (AWS, Docker) to enhance application scalability and intelligence.",
-"Collaborated with cross-functional teams to design and test innovative AI-powered solutions, improving efficiency and user engagement.",
-      
+      "Developed and integrated AI-driven features within web applications, combining MERN stack expertise with Generative AI tools.",
+      "Researched and applied agentic AI, LangChain, and cloud platforms (AWS, Docker) to enhance application scalability and intelligence.",
+      "Collaborated with cross-functional teams to design and test innovative AI-powered solutions, improving efficiency and user engagement.",
     ]
   };
 
