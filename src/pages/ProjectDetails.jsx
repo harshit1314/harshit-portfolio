@@ -199,4 +199,4 @@ const ProjectDetails = ({ darkMode }) => {
   );
 };
 
-export default (props) => <ProjectDetails {...props} />;
+export default ProjectDetails;
