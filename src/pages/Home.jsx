@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown, FaStar } from 'react-icons/fa';
-import GlassCard from '../components/GlassCard';
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa';
 import ProjectCard from '../components/ProjectCard';
 import EducationTimeline from '../components/EducationTimeline';
 import ExperienceCard from '../components/ExperienceCard';
@@ -17,11 +16,11 @@ const Home = ({ darkMode }) => {
       demo: "#"
     },
     {
-      title: "Cryptocurrency Tracker",
-      description: "Interactive dashboard for tracking live cryptocurrency prices with advanced charts, portfolio management, and market analysis. Features real-time data updates and price alerts.",
-      tags: ["React", "Firebase", "Chart.js", "CoinGecko API", "Material-UI"],
-      link: "/projects/crypto",
-      github: "https://github.com/harshit1314/crypto-tracker",
+      title: "PRIME AI — Fitness Platform",
+      description: "Full-stack MERN platform for personalized workout and diet plans with dynamic Gemini-powered recommendations based on user input.",
+      tags: ["React", "Node.js", "Express.js", "MongoDB", "Gemini API", "MERN"],
+      link: "/projects/primeai",
+      github: "https://github.com/harshit1314/ai-fitness-web",
       demo: "#"
     },
     {
@@ -202,7 +201,7 @@ const Home = ({ darkMode }) => {
                   </div>
                   <div className="highlight-item">
                     <span className="highlight-number">10+</span>
-                    <span className="highlight-text">Live Projects</span>
+                    <span className="highlight-text">Projects</span>
                   </div>
                   <div className="highlight-item">
                     <span className="highlight-number">Cert.</span>

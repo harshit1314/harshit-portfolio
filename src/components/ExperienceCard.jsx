@@ -6,7 +6,7 @@ const ExperienceCard = ({ darkMode }) => {
     {
       company: "Koloq.ai",
       position: "AI and Full Stack Developer Intern",
-      period: "July 2025 - Present",
+      period: "August 2025 - February 2026",
       location: "Remote / India",
       achievements: [
         "Developed and integrated AI-driven features within web applications using MERN stack and Generative AI tools.",

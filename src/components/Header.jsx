@@ -1,9 +1,19 @@
+import { useEffect, useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { FiSun, FiMoon } from 'react-icons/fi';
 
 const Header = ({ darkMode, toggleDarkMode }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 16);
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-content">
         <Link smooth to="/#" className="logo">
           <h1>HA</h1>

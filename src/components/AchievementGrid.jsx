@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaCertificate, FaTrophy, FaStar } from 'react-icons/fa';
+import { FaCertificate, FaTrophy } from 'react-icons/fa';
 
 const AchievementGrid = ({ darkMode }) => {
   const achievements = [
