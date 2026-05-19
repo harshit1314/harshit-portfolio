@@ -77,6 +77,21 @@ const ProjectDetails = ({ darkMode }) => {
           <p>{project.description}</p>
         </div>
 
+        <div className="project-meta">
+          <div className="meta-card">
+            <span className="meta-label">Key features</span>
+            <span className="meta-value">{project.details.length}</span>
+          </div>
+          <div className="meta-card">
+            <span className="meta-label">Technologies</span>
+            <span className="meta-value">{project.technologies.length}</span>
+          </div>
+          <div className="meta-card">
+            <span className="meta-label">Focus</span>
+            <span className="meta-value">UX, Performance</span>
+          </div>
+        </div>
+
         <section className="project-section">
           <h2>Key Features</h2>
           <ul className="details-list">

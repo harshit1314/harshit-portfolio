@@ -43,97 +43,145 @@ const Home = ({ darkMode }) => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-overlay"></div>
-        <motion.div
-          initial={{ y: 30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="hero-content"
-        >
+        <div className="hero-shell">
           <motion.div
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="hero-badge"
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="hero-content"
           >
-            Available for new opportunities 🚀
-          </motion.div>
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              className="hero-badge"
+            >
+              Available for new opportunities 🚀
+            </motion.div>
 
-          <h1 className="hero-title">
-            Hi, I'm <span className="name-highlight">Harshit Agarwal</span>
-          </h1>
-          <motion.p
-            className="hero-subtitle"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-          >
-            Full Stack Developer & AI Enthusiast
-          </motion.p>
+            <h1 className="hero-title">
+              Hi, I'm <span className="name-highlight">Harshit Agarwal</span>
+            </h1>
+            <motion.p
+              className="hero-subtitle"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.8 }}
+            >
+              Full Stack Developer & AI Enthusiast
+            </motion.p>
 
-          <motion.p
-            className="hero-description"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-          >
-            Crafting high-performance digital experiences with modern technologies.
-            Specializing in building scalable web applications and AI-driven solutions.
-          </motion.p>
+            <motion.p
+              className="hero-description"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+              Crafting high-performance digital experiences with modern technologies.
+              Specializing in building scalable web applications and AI-driven solutions.
+            </motion.p>
 
-          <motion.div
-            className="hero-actions"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-          >
-            <div className="hero-cta-group">
-              <motion.a
-                href="#projects"
-                className="btn btn-primary"
-                whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(99, 102, 241, 0.5)" }}
-                whileTap={{ scale: 0.95 }}
-              >
-                View My Portfolio
-              </motion.a>
-              <motion.a
-                href="#contact"
-                className="btn btn-secondary"
-                whileHover={{ y: -5, background: "rgba(255,255,255,0.1)" }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Let's Talk
-              </motion.a>
+            <div className="hero-badges">
+              <span className="pill">UI/UX Engineering</span>
+              <span className="pill">Product-first</span>
+              <span className="pill">MERN + AI</span>
             </div>
 
-            <div className="social-links">
-              <motion.a
-                href="https://github.com/harshit1314"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -5 }}
-                title="GitHub"
-              >
-                <FaGithub className="social-icon" />
-              </motion.a>
-              <motion.a
-                href="https://linkedin.com/in/harshit1314"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -5 }}
-                title="LinkedIn"
-              >
-                <FaLinkedin className="social-icon" />
-              </motion.a>
-              <motion.a
-                href="mailto:harshitagarwal038@gmail.com"
-                whileHover={{ y: -5 }}
-                title="Email"
-              >
-                <FaEnvelope className="social-icon" />
-              </motion.a>
+            <div className="hero-metrics">
+              <div className="metric-card">
+                <span className="metric-label">Projects shipped</span>
+                <span className="metric-value">10+</span>
+              </div>
+              <div className="metric-card">
+                <span className="metric-label">DSA solutions</span>
+                <span className="metric-value">600+</span>
+              </div>
+              <div className="metric-card">
+                <span className="metric-label">Focus</span>
+                <span className="metric-value">UX + AI</span>
+              </div>
+            </div>
+
+            <motion.div
+              className="hero-actions"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7, duration: 0.8 }}
+            >
+              <div className="hero-cta-group">
+                <motion.a
+                  href="#projects"
+                  className="btn btn-primary"
+                  whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(99, 102, 241, 0.5)" }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  View My Portfolio
+                </motion.a>
+                <motion.a
+                  href="#contact"
+                  className="btn btn-secondary"
+                  whileHover={{ y: -5, background: "rgba(255,255,255,0.1)" }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  Let's Talk
+                </motion.a>
+              </div>
+
+              <div className="social-links">
+                <motion.a
+                  href="https://github.com/harshit1314"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -5 }}
+                  title="GitHub"
+                >
+                  <FaGithub className="social-icon" />
+                </motion.a>
+                <motion.a
+                  href="https://linkedin.com/in/harshit1314"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -5 }}
+                  title="LinkedIn"
+                >
+                  <FaLinkedin className="social-icon" />
+                </motion.a>
+                <motion.a
+                  href="mailto:harshitagarwal038@gmail.com"
+                  whileHover={{ y: -5 }}
+                  title="Email"
+                >
+                  <FaEnvelope className="social-icon" />
+                </motion.a>
+              </div>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            className="hero-visual"
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            <div className="hero-card">
+              <p className="card-eyebrow">Design focus</p>
+              <h3>UX-forward interfaces</h3>
+              <p>Human-first flows, accessible UI, and crisp interactions that convert visitors into users.</p>
+            </div>
+            <div className="hero-card accent">
+              <p className="card-eyebrow">Now building</p>
+              <h3>AI-driven products</h3>
+              <p>Modern web apps with real-time data, automation, and intelligent UX personalization.</p>
+            </div>
+            <div className="hero-stack">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Framer Motion</span>
+              <span>Tailwind CSS</span>
             </div>
           </motion.div>
-        </motion.div>
+        </div>
 
         <motion.div
           className="scroll-indicator"
@@ -150,9 +198,10 @@ const Home = ({ darkMode }) => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="section">
+      <section id="about" className="section section-alt">
         <div className="container">
           <div className="section-header">
+            <span className="section-kicker">Profile</span>
             <motion.h2
               className="section-title"
               initial={{ opacity: 0, y: -20 }}
@@ -173,7 +222,7 @@ const Home = ({ darkMode }) => {
             </motion.p>
           </div>
 
-          <div className="about-content">
+          <div className="about-grid">
             <motion.div
               className="about-card glass"
               initial={{ opacity: 0, x: -50 }}
@@ -210,6 +259,35 @@ const Home = ({ darkMode }) => {
                 </div>
               </div>
             </motion.div>
+
+            <motion.div
+              className="about-panel glass"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              whileHover={{ y: -5 }}
+            >
+              <h3>Design values</h3>
+              <ul className="about-list">
+                <li>
+                  <span className="list-title">Clarity first</span>
+                  <span>Structure complex ideas into clean flows and intuitive UI.</span>
+                </li>
+                <li>
+                  <span className="list-title">Speed and polish</span>
+                  <span>Fast load, crisp motion, and accessible layouts.</span>
+                </li>
+                <li>
+                  <span className="list-title">Product thinking</span>
+                  <span>Design with user intent, metrics, and outcomes in mind.</span>
+                </li>
+              </ul>
+
+              <div className="about-footnote">
+                Currently building AI-first experiences with a focus on usability, trust, and performance.
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -222,9 +300,10 @@ const Home = ({ darkMode }) => {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="section">
+      <section id="experience" className="section section-alt">
         <div className="container">
           <div className="section-header">
+            <span className="section-kicker">Experience</span>
             <motion.h2
               className="section-title"
               initial={{ opacity: 0, y: -20 }}
@@ -252,6 +331,7 @@ const Home = ({ darkMode }) => {
       <section id="education" className="section">
         <div className="container">
           <div className="section-header">
+            <span className="section-kicker">Education</span>
             <motion.h2
               className="section-title"
               initial={{ opacity: 0, y: 20 }}
@@ -276,9 +356,10 @@ const Home = ({ darkMode }) => {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="section">
+      <section id="projects" className="section section-alt">
         <div className="container">
           <div className="section-header">
+            <span className="section-kicker">Work</span>
             <motion.h2
               className="section-title"
               initial={{ opacity: 0, y: -20 }}
@@ -315,6 +396,7 @@ const Home = ({ darkMode }) => {
       <section id="achievements" className="section">
         <div className="container">
           <div className="section-header">
+            <span className="section-kicker">Highlights</span>
             <motion.h2
               className="section-title"
               initial={{ opacity: 0, y: -20 }}
@@ -339,9 +421,10 @@ const Home = ({ darkMode }) => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="section">
+      <section id="contact" className="section section-alt">
         <div className="container">
           <div className="section-header">
+            <span className="section-kicker">Contact</span>
             <motion.h2
               className="section-title"
               initial={{ opacity: 0, y: -20 }}
@@ -360,6 +443,15 @@ const Home = ({ darkMode }) => {
             >
               Ready to collaborate? Let's build something amazing together!
             </motion.p>
+          </div>
+
+          <div className="contact-intro">
+            <p>Open to full-time roles, internships, and freelance product builds.</p>
+            <div className="contact-tags">
+              <span>Product UI</span>
+              <span>AI + Web</span>
+              <span>Frontend + Backend</span>
+            </div>
           </div>
 
           <div className="contact-grid">

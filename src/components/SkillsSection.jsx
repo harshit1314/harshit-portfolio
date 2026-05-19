@@ -52,6 +52,7 @@ const SkillsSection = ({ darkMode }) => {
     <section className="skills-section">
       <div className="container">
         <div className="section-header">
+          <span className="section-kicker">Tooling</span>
           <motion.h2
             className="section-title"
             initial={{ opacity: 0, y: -20 }}

@@ -29,7 +29,7 @@ const Particles = ({ darkMode }) => {
   });
 
   const particleColor = useMemo(() => {
-    return darkMode ? '#818cf8' : '#6366f1';
+    return darkMode ? '#4dd2ff' : '#0ea5e9';
   }, [darkMode]);
 
   return (
@@ -76,7 +76,7 @@ const FloatingShapes = ({ darkMode }) => {
         <mesh key={index} position={position}>
           <sphereGeometry args={[0.01, 8, 8]} />
           <meshBasicMaterial
-            color={darkMode ? '#667eea' : '#4facfe'}
+            color={darkMode ? '#22b3f1' : '#38bdf8'}
             transparent
             opacity={0.3}
           />
